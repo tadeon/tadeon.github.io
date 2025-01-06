@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>Игра Xonix</title>
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/respond.min.js"></script><![endif]-->
+  </head>
+  <body><!--[if lt IE 9]>
+    <p class="browserupgrade">Вы используете <strong>очень старый</strong> браузер.
+      Пожалуйста, <a href="http://browsehappy.com/">обновите Ваш браузер</a>
+      для улучшенного отображения сайта.
+    </p><![endif]-->
+    <div id="container">
+      <main>
+        <div id="xonix-game-container">
+          <canvas id="game-canvas" width="640" height="480"></canvas>
+          <div class="game-board">
+            <div class="scores"><span class="label">Очки:</span><span class="value">0</span></div>
+            <div class="lives"><span class="label">Жизни:</span><span class="value">0</span></div>
+            <div class="fill"><span class="label">Заполнено:</span><span class="value">0</span><span>%</span></div>
+          </div>
+          <div class="game-manager">
+            <div class="start">
+              <div class="title">Игра</div>
+              <h1>Xonix</h1>
+              <p>Была создана в 1984 году для платформы PC как клон игры Qix, появившейся ранее на аркадных автоматах. Придумана Иланом Рабом и Дэни Катцем. Была популярна в 1980-е и 1990-е годы. Существует много версий для разных платформ.</p>
+              <p>Курсором необходимо отрезать территорию. Сам курсор и его путь не должны задеть мячики. Надо отрезать 3/4 территории.</p>
+              <div class="btn-container">
+                <button class="begin-btn">Начать</button>
+              </div>
+            </div>
+            <div class="stop">
+              <div class="title">Все жизни потрачены!</div>
+              <div class="text">
+                <p>Ваш текущий результат: <span class="current scores"></span></p>
+                <p>Ваш лучший результат: <span class="top scores"></span></p>
+              </div>
+              <div class="btn-container">
+                <button class="again-btn">Заново</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/jquery-2.2.4.min.js"></script><!--[if lt IE 9]><script src="./js/jquery-1.12.4.min.js"></script><![endif]-->
+    <script src="./js/app.min.js"></script>
+</body>
+</html>

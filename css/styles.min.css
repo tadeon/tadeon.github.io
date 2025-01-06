@@ -1,0 +1,468 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden],
+template {
+    display: none;
+}
+a {
+    background-color: transparent;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b,
+strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 1em 40px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+pre {
+    overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+}
+optgroup {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+@font-face {
+    font-family: "RegularFont";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+    font-family: "SpecialFont";
+    src: url("../fonts/MarckScript-Regular.ttf");
+}
+html,
+body {
+    color: #eee;
+    font-size: 14px;
+    font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;
+    line-height: 18px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-weight: normal;
+}
+a {
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+}
+::-moz-selection {
+    background: #aaa;
+    text-shadow: none;
+}
+::selection {
+    background: #aaa;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.browserupgrade {
+    background: #d00;
+    color: #fdd;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.browserupgrade a {
+    color: #fff;
+}
+#container {
+    text-align: center;
+}
+.container {
+    width: 640px;
+    margin: auto;
+}
+header {
+    padding: 20px 0;
+}
+#xonix-game-container {
+    width: 640px;
+    height: 510px;
+    margin: auto;
+}
+#xonix-game-container.fullscreen {
+    width: 100%;
+}
+#xonix-game-container.fullscreen #game-canvas {
+    width: 100%;
+    height: auto;
+}
+#xonix-game-container.fullscreen .game-board {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#xonix-game-container.fullscreen .game-manager {
+    width: 100%;
+    height: 100%;
+}
+#xonix-game-container .game-board {
+    width: 640px;
+    height: 30px;
+    line-height: 30px;
+    background: #333;
+    color: #ccc;
+}
+#xonix-game-container .game-board .scores,
+#xonix-game-container .game-board .lives,
+#xonix-game-container .game-board .fill {
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+#xonix-game-container .game-board .scores .value,
+#xonix-game-container .game-board .lives .value,
+#xonix-game-container .game-board .fill .value {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #da6;
+}
+#xonix-game-container .game-board .scores .label,
+#xonix-game-container .game-board .lives .label,
+#xonix-game-container .game-board .fill .label {
+    font-family: "RegularFont";
+}
+#xonix-game-container .game-board .scores {
+    text-align: left;
+}
+#xonix-game-container .game-board .scores .label {
+    margin-left: 10px;
+}
+#xonix-game-container .game-board .lives {
+    text-align: center;
+}
+#xonix-game-container .game-board .fill {
+    text-align: right;
+}
+#xonix-game-container .game-board .fill .label {
+    margin-right: 10px;
+}
+#xonix-game-container .game-manager {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 640px;
+    height: 510px;
+    color: #ccc;
+}
+#xonix-game-container .game-manager .stop {
+    display: none;
+}
+#xonix-game-container .game-manager .stop .scores {
+    font-weight: bold;
+    color: #da6;
+}
+#xonix-game-container .game-manager .stop .text {
+    margin: 60px 0;
+}
+#xonix-game-container .game-manager .btn-container {
+    margin: 40px 0;
+}
+#xonix-game-container .game-manager .title {
+    font-family: "RegularFont";
+    font-size: 24px;
+    margin: 60px 0 0;
+}
+#xonix-game-container .game-manager h1 {
+    font-family: "SpecialFont";
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0;
+    color: #da6;
+}
+#xonix-game-container .game-manager p {
+    padding: 0 40px;
+}
+#xonix-game-container .game-manager button {
+    color: #333;
+    padding: 10px 40px;
+    background: #f6c696;
+    background: linear-gradient(#f6c696, #e9893d);
+    border: solid 1px #a1681b;
+    box-shadow: inset 0 0 0 1px #f1bb8f;
+    text-shadow: 0 1px 0 #a1671d;
+    font-size: 16px;
+}
+#xonix-game-container .game-manager button:hover {
+    background: #e9893d;
+    background: linear-gradient(#e9893d, #f6c696);
+    box-shadow: inset 0 0 0 1px #f1bb8f;
+}
+.hidden {
+    display: none !important;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a {
+        text-decoration: underline;
+    }
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+    img {
+        page-break-inside: avoid;
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
