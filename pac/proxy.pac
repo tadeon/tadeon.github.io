@@ -23,7 +23,8 @@ var whitelistDomains = [
     "selectel.ru",  
     "ipg.su",
     "2ip.ru",
-    "ipinfo.io"
+    "ipinfo.io",
+    "ceflafinishing.ru"
 ];
 
 function FindProxyForURL(url, host) {
