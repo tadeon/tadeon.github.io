@@ -24,8 +24,8 @@ var whitelistDomains = [
     "ipg.su",
     "2ip.ru",
     "ipinfo.io",
-    "ceflafinishing.ru",
-    "mail.ceflafinishing.ru"
+    "ceflafinishing.ru"
+//    "mail.ceflafinishing.ru"
 ];
 
 function FindProxyForURL(url, host) {
