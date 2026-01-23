@@ -28,6 +28,11 @@ var whitelistDomains = [
 //    "mail.ceflafinishing.ru"
 ];
 
+var ProxyListDomains = [
+    "traefik.aws01.hostping.ru",
+    "whatismyipaddress.com"
+];
+
 function FindProxyForURL(url, host) {
     if (host.match(ip4Re)) {
         for (var i = 0; i < privateNet.length; i++) {
@@ -35,11 +40,17 @@ function FindProxyForURL(url, host) {
         }
         return proxy;  // External IP
     }
-    if (shExpMatch(host, "whatismyipaddress.com") ||
-        shExpMatch(host, "*.whatismyipaddress.com")) {
-        return proxy;
+
+    for (var i = 0; i < ProxyListDomains.length; i++) {
+        var domain = ProxyListDomains[i];
+        if (host === domain) {
+            return proxy;
+        }
+        if (shExpMatch(host, "*." + domain)) {
+            return proxy;
+        }
     }
-    
+
     for (var i = 0; i < whitelistDomains.length; i++) {
         var domain = whitelistDomains[i];
         if (host === domain) {
