@@ -1,0 +1,52 @@
+var privateNet = [
+    ["10.0.0.0", "255.0.0.0"],
+    ["127.0.0.0", "255.0.0.0"],
+    ["172.16.0.0", "255.240.0.0"],
+    ["192.168.0.0", "255.255.0.0"],
+]
+var direct = "DIRECT";
+var ip4Re = /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/
+var proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080";
+
+var whitelistDomains = [
+    "yapfiles.ru",
+    "yaplakal.com",  
+    "pikabu.ru",  
+    "yandex.ru",  
+    "vkvideo.ru",  
+    "ok.ru",  
+    "okcdn.ru",  
+    "bb.1adm.ru",  
+    "t-an.ru",  
+    "hostping.ru",  
+    "ozon.ru",  
+    "selectel.ru",  
+    "ipg.su",
+    "2ip.ru",
+    "ipinfo.io"
+];
+
+function FindProxyForURL(url, host) {
+    if (host.match(ip4Re)) {
+        for (var i = 0; i < privateNet.length; i++) {
+            if (isInNet(host, privateNet[i][0], privateNet[i][1])) return direct;  // Private IP
+        }
+        return proxy;  // External IP
+    }
+    if (shExpMatch(host, "whatismyipaddress.com") ||
+        shExpMatch(host, "*.whatismyipaddress.com")) {
+        return proxy;
+    }
+    
+    for (var i = 0; i < whitelistDomains.length; i++) {
+        var domain = whitelistDomains[i];
+        if (host === domain) {
+            return direct;
+        }
+        if (shExpMatch(host, "*." + domain)) {
+            return direct;
+        }
+    }
+    
+    return proxy;
+}
