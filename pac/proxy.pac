@@ -26,7 +26,6 @@ var whitelistDomains = [
     "ipinfo.io",
     "ceflafinishing.ru",
 "dzen.ru"
-//    "mail.ceflafinishing.ru"
 ];
 
 var ProxyListDomains = [
