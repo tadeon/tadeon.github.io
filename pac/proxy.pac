@@ -26,7 +26,8 @@ var whitelistDomains = [
 "2ip.ru",
 "ipinfo.io",
 "ceflafinishing.ru",
-"dzen.ru"
+"dzen.ru",
+"rutube.ru"
 ];
 
 var ProxyListDomains = [
