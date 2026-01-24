@@ -9,23 +9,25 @@ var ip4Re = /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/
 var proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080";
 
 var whitelistDomains = [
-    "yapfiles.ru",
-    "yaplakal.com",  
-    "pikabu.ru",  
-    "yandex.ru",  
-    "vkvideo.ru",  
-    "ok.ru",  
-    "okcdn.ru",  
-    "1adm.ru",  
-    "t-an.ru",  
-    "hostping.ru",  
-    "ozon.ru",  
-    "selectel.ru",  
-    "ipg.su",
-    "2ip.ru",
-    "ipinfo.io",
-    "ceflafinishing.ru",
-"dzen.ru"
+"yapfiles.ru",
+"yaplakal.com",
+"pikabu.ru",
+"yandex.ru",
+"vkvideo.ru",
+"ok.ru",
+"okcdn.ru",  
+"1adm.ru",  
+"t-an.ru",  
+"hostping.ru",  
+"ozon.ru",  
+"selectel.ru",  
+"ipg.su",
+"2ip.ru",
+"ipinfo.io",
+"ceflafinishing.ru",
+"dzen.ru",
+"vk.ru",
+"pikabu.ru"
 ];
 
 var ProxyListDomains = [
