@@ -14,6 +14,7 @@ var whitelistDomains = [
 "pikabu.ru",
 "yandex.ru",
 "vkvideo.ru",
+"vk.ru",
 "ok.ru",
 "okcdn.ru",  
 "1adm.ru",  
@@ -25,9 +26,7 @@ var whitelistDomains = [
 "2ip.ru",
 "ipinfo.io",
 "ceflafinishing.ru",
-"dzen.ru",
-"vk.ru",
-"pikabu.ru"
+"dzen.ru"
 ];
 
 var ProxyListDomains = [
