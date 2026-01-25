@@ -15,6 +15,7 @@ var whitelistDomains = [
 "yandex.ru",
 "vkvideo.ru",
 "vk.ru",
+"vk.com",
 "ok.ru",
 "okcdn.ru",  
 "1adm.ru",  
