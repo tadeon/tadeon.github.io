@@ -31,7 +31,8 @@ var whitelistDomains = [
 "1ep.ru",
 "bitrix24.ru",
 "bitrix24.net",
-"riko-group.com"
+"riko-group.com",
+"d3.ru"
 ];
 
 var ProxyListDomains = [
