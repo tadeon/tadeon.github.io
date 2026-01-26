@@ -24,7 +24,6 @@ var whitelistDomains = [
 "ozon.ru",  
 "selectel.ru",  
 "ipg.su",
-"2ip.ru",
 "ipinfo.io",
 "ceflafinishing.ru",
 "dzen.ru",
