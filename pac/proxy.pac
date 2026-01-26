@@ -29,7 +29,9 @@ var whitelistDomains = [
 "dzen.ru",
 "rutube.ru",
 "1ep.ru",
-"bitrix24.ru"
+"bitrix24.ru",
+"bitrix24.net",
+"riko-group.com"
 ];
 
 var ProxyListDomains = [
