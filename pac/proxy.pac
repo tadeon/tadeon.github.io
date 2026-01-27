@@ -35,7 +35,8 @@ var whitelistDomains = [
 "riko-group.com",
 "d3.ru",
 "avito.ru",
-"guthub.com"
+"guthub.com",
+"reg.ru"
 ];
 
 var ProxyListDomains = [
