@@ -36,7 +36,8 @@ var whitelistDomains = [
 "d3.ru",
 "avito.ru",
 "guthub.com",
-"reg.ru"
+"reg.ru",
+"helpdeskeddy.com"
 ];
 
 var ProxyListDomains = [
