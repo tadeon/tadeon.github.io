@@ -39,7 +39,8 @@ var whitelistDomains = [
 "reg.ru",
 "helpdeskeddy.com",
 "mosenergosbyt.ru",
-"gosuslugi.ru"
+"gosuslugi.ru",
+"max.ru"
 ];
 
 var ProxyListDomains = [
