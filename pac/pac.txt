@@ -23,6 +23,7 @@ var whitelistDomains = [
 "t-an.ru",  
 "hostping.ru",  
 "ozon.ru",  
+"ozone.ru",
 "selectel.ru",  
 "ipg.su",
 "ipinfo.io",
