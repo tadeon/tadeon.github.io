@@ -24,6 +24,7 @@ var whitelistDomains = [
 "hostping.ru",  
 "ozon.ru",  
 "ozone.ru",
+"ozonusercontent.com",
 "selectel.ru",  
 "ipg.su",
 "ipinfo.io",
