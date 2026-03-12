@@ -43,6 +43,7 @@ var whitelistDomains = [
 "mosenergosbyt.ru",
 "gosuslugi.ru",
 "max.ru",
+"oneme.ru",
 "online-red.com",
 "sysadmins.ru"
 ];
