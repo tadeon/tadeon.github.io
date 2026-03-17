@@ -47,7 +47,8 @@ var whitelistDomains = [
 "online-red.com",
 "sysadmins.ru",
 "kaspersky.com",
-"kaspersky.ru"
+"kaspersky.ru",
+"rambler.ru"
 ];
 
 var ProxyListDomains = [
