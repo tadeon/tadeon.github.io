@@ -45,7 +45,9 @@ var whitelistDomains = [
 "max.ru",
 "oneme.ru",
 "online-red.com",
-"sysadmins.ru"
+"sysadmins.ru",
+"kaspersky.com",
+"kaspersky.ru"
 ];
 
 var ProxyListDomains = [
